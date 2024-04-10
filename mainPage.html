@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&family=Koulen&family=Merriweather:wght@300&family=Nosifer&family=Poppins:wght@300;400&family=Port+Lligat+Slab&family=Sancreek&family=Staatliches&family=Yanone+Kaffeesatz:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="shortcut icon" href="images/logo.png">
+    <title>WORLD CUP 2030</title>
+</head>
+<body>
+    <div>
+
+<!--Nav-->        
+        <nav class="flex justify-between px-7 min-w-full h-28px bg-white items-center fixed z-50 ">
+            <a target="_blank" href="https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/articles/world-cup-2030-spain-portugal-morocco-host-centenary-argentina-uruguay-paraguay"><img class="w-20" src="images/logo.png" ></a>
+            <ul class="flex items-center ">
+                <a href="#Acceuil" class="text-xl p-3 m-1 cursor-pointer duration-300 font-semibold rounded-lg hover:bg-red-600 hover:text-white "><i class="fa-solid fa-house mr-2"></i>Acceuil</a>
+
+                <a href="#News" class="text-xl p-3 m-1 cursor-pointer duration-300 font-semibold rounded-lg hover:bg-red-600 hover:text-white "><i class="fa-solid fa-newspaper mr-2"></i>News</a>
+
+                <a href="#Stats" class="text-xl p-3 m-1 cursor-pointer duration-300 font-semibold rounded-lg hover:bg-red-600 hover:text-white "><i class="fa-solid fa-chart-line mr-2"></i>Statistiques</a>
+
+
+                <a href="#Contact" class="text-xl p-3 m-1 cursor-pointer duration-300 font-semibold rounded-lg hover:bg-red-600 hover:text-white "><i class="fa-solid fa-envelope mr-2 "></i>Contact</a>
+            </ul>
+            <a id="sedeconnecter" class="hidden px-5 py-2 rounded-3xl h-10 bg-red-600 text-white duration-300 hover:bg-red-400 font-semibold cursor-pointer" ><i class="fa-solid fa-right-from-bracket mr-2"></i>Se deconnecter</a>
+            <a id="seconnecter" href="/login/index.html" class="px-5 py-2 rounded-3xl h-10 bg-red-600 text-white duration-300 hover:bg-red-400 font-semibold cursor-pointer" ><i class="fa-solid fa-user mr-2"></i>Se connecter</a>
+        </nav>
+
+
+
+        <div class=" bg-top bg-fixed min-w-full bg-[linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('images/bg.jpg')] bg-cover bg-center" >
+
+<!--Acceuil-->   
+            
+            <div class=" py-12 mb-10 text-center" id="Acceuil">
+               
+                <h1 class="text-white mb-20 mt-10 text-4xl font-bold  bg-gradient-to-r from-red-600 ">PROCHAINS MATCHS:</h1>
+               
+                <div class="flex justify-evenly" >
+               
+                    <div class="card1 w-96 rounded p-10 pt-5 backdrop-blur-sm shadow-md shadow-red-500/100  ">
+                    <h2 class="text-white text-center mb-5 text-xl font-bold">QUART DE FINALE 1</h2>
+                    <div class="flex flex-row justify-between items-center ">
+                        <img class="h-12 ml-2" src="images/mar.png">
+                        <img class="h-14 ml-1" src="images/vs.png">
+                        <img class="h-12 mr-2" src="images/arg.webp">
+                    </div>
+                    <img src="images/stad.png" class="h-12 m-auto mt-6 mb-2">
+                    <a class="group" target="_blank" href="https://www.google.com/maps/place/Ibn+Batouta+Stadium/@35.741152,-5.8580531,15z/data=!4m6!3m5!1s0xd0b87a7b9e9b7e5:0xad9add5f6dc2c4c8!8m2!3d35.741152!4d-5.8580531!16zL20vMGQwY2c0?entry=ttu"><h3 class="text-center text-white text-lg font-semibold duration-300 group-hover:scale-110 "><i class="fa-solid fa-location-dot mr-2 duration-300 group-hover:scale-110"></i> Ibn Batouta - TANGER</h3></a>
+                    <h3 class="text-white text-center inline "><i class="fa-solid fa-calendar-days mr-2"></i>24/06/2030   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 14:00 GMT</h3><i class="fa-solid fa-sun text-yellow-500 ml-2"></i>
+                    <button id="acheter1" class="group px-5 mt-6 rounded-3xl h-10 bg-red-600 text-white duration-300 hover:border-sky-200 hover:shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f,0_0_30px_#08f]"><a target="_blank">Reservez les tickets</a><i class="fa-solid fa-cart-shopping duration-300 ml-1 group-hover:translate-x-1"></i></button>
+                </div>
+
+                <div class="card2 w-96 rounded p-10 pt-5 backdrop-blur-sm shadow-md shadow-red-500/100">
+                    <h2 class="text-white text-center mb-5 text-xl font-bold">QUART DE FINALE 2</h2>
+                    <div class="flex flex-row justify-between items-center ">
+                        <img class="h-12 ml-2" src="images/bra.png">
+                        <img class="h-14 ml-1" src="images/vs.png">
+                        <img class="h-12 mr-2" src="images/fra.png">
+                    </div>
+                    <img src="images/stad.png" class="h-12 m-auto mt-6 mb-2">
+                    <a class="group" target="_blank" href="https://www.google.com/maps/place/Prince+Moulay+Abdellah+Stadium/@33.9598463,-6.8890037,15z/data=!4m2!3m1!1s0x0:0xa48e7a4d205b07f1?sa=X&ved=2ahUKEwi22qvU4YSDAxWYVKQEHSWRCxwQ_BJ6BAgSEAA"><h3 class="text-center text-white text-lg font-semibold duration-300 group-hover:scale-110"><i class="fa-solid fa-location-dot mr-2 duration-300 group-hover:scale-110"></i>Stade Prince Moulay Abdellah - RABAT</h3></a>
+                    <h3 class="text-white text-center inline"><i class="fa-solid fa-calendar-days mr-2"></i>24/06/2030  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 20:00 GMT</h3><i class="fa-solid fa-moon text-white ml-2"></i>
+                    <button id="acheter2" class="group px-5 mt-6 rounded-3xl h-10 bg-red-600 text-white duration-300 hover:border-sky-200 hover:shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#08f,0_0_15px_#08f,0_0_30px_#08f]"><a target="_blank">Reservez les tickets</a><i class="fa-solid fa-cart-shopping duration-300 ml-1 group-hover:translate-x-1"></i></button>
+                </div>
+                </div>
+            </div>
+<!--News-->
+<div class=" py-12 mb-10 text-center" id="News">
+               
+    <h1 class="text-white mb-20 mt-10 text-4xl font-bold  bg-gradient-to-r from-red-600 ">News</h1>
+   
+    <div class="flex justify-evenly" >
+   
+        <div class="duration-300 cursor-pointer hover:scale-110 card111 flex w-2/5 h-80 rounded pt-5 shadow-md  bg-[linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url('images/news1.webp')] bg-cover ">
+            <h3 class="news px-1 pt-2 items-center h-20 min-w-full self-end text-2xl text-white font-bold  bg-red-600 relative top-16" >Walid Regragui prolonge son contrat jusqu'en 2032.</h3>
+        </div>
+        <div class="duration-300 cursor-pointer hover:scale-110 card111 flex w-2/5 h-80  rounded pt-5 shadow-md  bg-[linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url('images/news2.jpg')] bg-cover ">>
+            <h3 class="news px-1 pt-2 items-center h-20 min-w-full self-end text-2xl text-white font-bold  bg-red-600 relative top-16" >Le Stade Ibn Batouta hostera le final du coupe du monde.</h3>
+        </div>
+    </div>
+
+</div>
+
+
+<!--Statistiques-->
+
+        <div class="py-10 text-center" id="Stats" >
+               
+            <h1 class="text-white mb-15 mt-10 text-4xl font-bold  bg-gradient-to-r from-red-600 ">Statistiques:</h1>
+
+            <div class="flex justify-evenly" >
+
+                <div class="card11 w-1/2 ml-56 mr-10   pt-5 " >
+                    <h2 class="text-white text-center mb-5 text-xl font-bold">MEILLEURS BUTEURS:</h2>
+                    <div class="flex flex-col justify-between items-center box box border-2">
+            
+                        <div class="flex flex-row justify-around min-w-full">
+                            <span>NATIONALITE</span>
+                            <span>NOM</span>
+                            <span>BUTS</span>
+                        </div>
+
+                        <div class="flex flex-row justify-around min-w-full">
+                            <span ><img class="m-auto w-1/5" src="images/bra_round.png" class="w-1/6"></span>
+                            <span>Rodrygo</span>
+                            <span>5<i class="fa-solid fa-futbol ml-2"></i></span>
+                        </div>
+
+                        <div class="flex flex-row justify-around min-w-full">
+                            <span ><img class="m-auto w-1/5" src="images/fra_round.png" class="w-1/6"></span>
+                            <span>Mbappe</span>
+                            <span>5<i class="fa-solid fa-futbol ml-2"></i></span>
+                        </div>
+
+                        <div class="flex flex-row justify-around min-w-full">
+                            <span ><img class="m-auto w-1/5" src="images/mar_round.png" class="w-1/6"></span>
+                            <span>En-Nesyri</span>
+                            <span>4<i class="fa-solid fa-futbol ml-2"></i></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card22 w-1/2 mr-56  pt-5 ">
+
+                    <h2 class="text-white text-center mb-5 text-xl font-bold">MEILLEURS PASSEURS:</h2>
+                    <div class="flex flex-col justify-between items-center box box border-2">
+                        <div class="flex flex-row justify-around min-w-full">
+                            <span>NATIONALITE</span>
+                            <span>NOM</span>
+                            <span>PASSES</span>
+                        </div>
+
+                        <div class="flex flex-row justify-around min-w-full">
+                            <span ><img class="m-auto w-1/5" src="images/mar_round.png" class="w-1/6"></span>
+                            <span>El Khannous</span>
+                            <span>6<i class="fa-solid fa-wand-magic-sparkles ml-2 text-blue-700"></i></span>
+                        </div>
+
+                        <div class="flex flex-row justify-around min-w-full">
+                            <span ><img class="m-auto w-1/5" src="images/bra_round.png" class="w-1/6"></span>
+                            <span>Vini Jr.</span>
+                            <span>5<i class="fa-solid fa-wand-magic-sparkles ml-2 text-blue-700"></i></span>
+                        </div>
+
+                        <div class="flex flex-row justify-around min-w-full">
+                            <span ><img class="m-auto w-1/5" src="images/eng_round.png" class="w-1/6"></span>
+                            <span>Bellingham</span>
+                            <span>3<i class="fa-solid fa-wand-magic-sparkles ml-2 text-blue-700"></i></span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="flex justify-evenly mt-10" >
+
+                <div class="card11 w-1/2 ml-56 mr-10  pt-5 " >
+                    <h2 class="text-white text-center mb-5 text-xl font-bold">MEILLEURS PERFORMANCES:</h2>
+                    <div class="flex flex-col justify-between items-center box border-2">
+            
+                        <div class="flex flex-row justify-around min-w-full">
+                            <span >NATIONALITE</span>
+                            <span >NOM</span>
+                            <span>NOTE</span>
+                        </div>
+
+                        <div class="flex flex-row justify-around min-w-full">
+                            <span ><img class="m-auto w-1/5" src="images/eng_round.png" class="w-1/6"></span>
+                            <span>Bellingham</span>
+                            <span>8.2<i class="fa-solid fa-star ml-2 text-yellow-400"></i></span>
+                        </div>
+
+                        <div class="flex flex-row justify-around min-w-full">
+                            <span ><img class="m-auto w-1/5" src="images/fra_round.png" class="w-1/6"></span>
+                            <span>Mbappe</span>
+                            <span>7.9<i class="fa-solid fa-star ml-2 text-yellow-400"></i></span>
+                        </div>
+
+                        <div class="flex flex-row justify-around min-w-full">
+                            <span ><img class="m-auto w-1/5" src="images/mar_round.png" class="w-1/6"></span>
+                            <span>El Khannous</span>
+                            <span>7.7<i class="fa-solid fa-star ml-2 text-yellow-400"></i></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card22 w-1/2 mr-56 pt-5 ">
+
+                    <h2 class="text-white text-center mb-5 text-xl font-bold">MEILLEURS GARDIENS:</h2>
+                    <div class="flex flex-col justify-between items-center box box border-2">
+                        <div class="flex flex-row justify-around min-w-full">
+                            <span>NATIONALITE</span>
+                            <span>NOM</span>
+                            <span>ARRETS</span>
+                        </div>
+
+                        <div class="flex flex-row justify-around min-w-full">
+                            <span ><img class="m-auto w-1/5" src="images/croatia_round.png" class="w-1/6"></span>
+                            <span>Livakovic</span>
+                            <span>17<i class="fa-solid fa-shield-halved ml-2 text-red-600"></i></span>
+                        </div>
+
+                        <div class="flex flex-row justify-around min-w-full">
+                            <span ><img class="m-auto w-1/5" src="images/fra_round.png" class="w-1/6"></span>
+                            <span>Maignan</span>
+                            <span>14<i class="fa-solid fa-shield-halved ml-2 text-red-600"></i></span>
+                        </div>
+
+                        <div class="flex flex-row justify-around min-w-full">
+                            <span ><img class="m-auto w-1/5" src="images/ita_round.png" class="w-1/6"></span>
+                            <span>Vicario</span>
+                            <span>12<i class="fa-solid fa-shield-halved ml-2 text-red-600"></i></span>
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+
+        </div>
+        
+<!--Contact-->        
+
+        <div class="pt-10 text-center" id="Contact" >
+               
+            <h1 class="text-white my-9 text-4xl font-bold  bg-gradient-to-r from-red-600">Contact:</h1>
+
+            <div class="flex justify-evenly" >
+                <section class="text-white-600 body-font relative overflow-hidden">
+                    <div class="container px-5 mx-auto ">
+                      <div class="flex flex-col text-center w-full mb-12">
+                        <p class="lg:w-2/3 mx-auto text-white text-lg">
+                            Pour nous contacter, veuillez remplir le formulaire ci-dessous ou nous envoyer un e-mail à l'adresse suivante : <a href="mailto:contact@frmf.ma"> worldcup2030@gmail.com </a></p>
+                      </div>
+                      <div class="lg:w-1/2 md:w-2/3 mx-auto">
+                        <div class="flex flex-wrap -m-2">
+                          <div class="p-2 w-1/2">
+                            <div class="relative">
+                              <label for="name" class="leading-7 font-bold text-white">Nom</label>
+                              <input type="text" id="name" name="name" class="w-full bg-gray-100 bg-opacity-10 rounded border border-gray-300 focus:border-red-500 focus:bg-black focus:ring-2 focus:ring-red-200 outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                            </div>
+                          </div>
+                          <div class="p-2 w-1/2">
+                            <div class="relative">
+                              <label for="email" class="leading-7 font-bold text-white">Email</label>
+                              <input type="email" id="email" name="email" class="w-full bg-gray-100 bg-opacity-10 rounded border border-gray-300 focus:border-red-500 focus:bg-black focus:ring-2 focus:ring-red-200 text-base outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                            </div>
+                          </div>
+                          <div class="p-2 w-full">
+                            <div class="relative">
+                              <label for="message" class="leading-7 font-bold text-white">Message</label>
+                              <textarea id="message" name="message" class="w-full bg-gray-100 bg-opacity-10 rounded border border-gray-300 focus:border-red-500 focus:bg-black focus:ring-2 focus:ring-red-200 h-32 text-base outline-none text-white py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                            </div>
+                          </div>
+                          <div class="p-2 mb-10 w-full">
+                            <button class="flex mx-auto text-white bg-red-600 border-0 py-2 px-8 duration-300 focus:outline-none hover:bg-red-400 rounded text-lg">Envoyez votre demande</button>
+                          </div>
+                          <div class="p-2 w-full border-t border-gray-200 text-center">
+                            <a class="text-red-500 font-semibold" href="mailto:contact@frmf.ma"><i class="fa-solid fa-envelope mr-2"></i> contact@frmf.ma</a>
+                            <p class="text-white my-2">
+                                <i class="fa-solid fa-location-dot mr-2"></i>Secteur 11, Angle Rue ARROZ et
+
+                              <br> Rue ARRAM Hay RIAD-Rabat
+                            </p>
+                            <span class="inline-flex justify-evenly">
+                              <a href="https://www.facebook.com/officielfrmf/" target="_blank" class="text-white hover:text-blue-600">
+                                <i class="fa-brands fa-facebook"></i>
+                              </a>
+                              <a href="https://www.instagram.com/equipedumaroc/" target="_blank" class="text-white hover:text-rose-600">
+                                <i class="fa-brands fa-instagram"></i>
+                              </a>
+                              <a href="https://twitter.com/FRMFOFFICIEL" target="_blank" class="text-white hover:text-black">
+                                <i class="fa-brands fa-x-twitter"></i>
+                              </a>
+                              <a href="https://www.youtube.com/channel/UCbQlejA3nCVMq-9qw-oZEtQ" target="_blank" class="text-white hover:text-red-600">
+                                <i class="fa-brands fa-youtube"></i>
+                              </a>
+                            </span>
+                            <p class="my-4 text-white">2019 FÉDÉRATION ROYALE MAROCAINE DE FOOTBALL | TOUS DROITS RÉSERVÉS &copy</p>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                    
+                  </section>
+    </div>
+
+</div>
+<style>
+*{font-family: 'Port Lligat Slab', serif;}
+div{font-family: 'Koulen', sans-serif;}
+button{font-family: 'Port Lligat Slab', serif;}
+.card1 , .card2{height: 340px;}
+span{color:white;padding: 2px;width: calc(100%/3);border-bottom:1px solid white ;
+    border-top:1px solid white ;}
+.card11 , .card22{width: 450px;}
+.box{width: 100%}
+.news{font-family: 'Acme', sans-serif;
+font-family: 'Koulen', sans-serif;
+font-family: 'Merriweather', serif;
+}
+</style>
+
+<script type="module">
+
+
+
+
+const acheter1 = document.getElementById("acheter1");
+const acheter2 = document.getElementById("acheter2");
+
+acheter1.addEventListener("click",Visiteur);
+acheter2.addEventListener("click",Visiteur);
+
+
+
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js";
+import { getAuth,
+createUserWithEmailAndPassword,
+signInWithEmailAndPassword,
+onAuthStateChanged,
+signOut,
+sendEmailVerification
+} from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+      
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyCyiLtFSarq5KtsfgpbnbFK98rU1SgiBqc",
+  authDomain: "world-cup-2030-7f986.firebaseapp.com",
+  projectId: "world-cup-2030-7f986",
+  storageBucket: "world-cup-2030-7f986.appspot.com",
+  messagingSenderId: "442511059546",
+  appId: "1:442511059546:web:f46304d9638bab14a6c663",
+  measurementId: "G-1LJTMMRVKT"
+};
+      
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+const auth = getAuth(app);
+const seconnecter = document.getElementById("seconnecter");
+const sedeconnecter = document.getElementById("sedeconnecter");
+
+
+const checkAuthState = async()=>{
+    onAuthStateChanged(auth,user=>{
+        
+        if(user){
+            localStorage.setItem("user",user)
+            seconnecter.style.display='none';
+            sedeconnecter.style.display='inline';
+
+            
+        }
+        else{
+            localStorage.removeItem("user",user)
+            seconnecter.style.display='inline';
+            sedeconnecter.style.display='none';
+        }
+        
+    })
+}
+checkAuthState();
+
+const userSignout = async()=>{
+    await signOut(auth);
+    let timerInterval;
+
+Swal.fire({
+color:"red",
+  title: "Vous êtes deconnectés",
+  timer: 1500,
+  timerProgressBar: true,
+  didOpen: () => {
+    Swal.showLoading();
+    const timer = Swal.getPopup().querySelector("b");
+    timerInterval = setInterval(() => {
+      timer.textContent = `${Swal.getTimerLeft()}`;
+    }, 100);
+  },
+  willClose: () => {
+    clearInterval(timerInterval);
+  }
+})
+}
+sedeconnecter.addEventListener('click',userSignout); 
+
+
+
+    function Visiteur(){       
+        const user = localStorage.getItem("user")
+
+
+        if(!user){
+            Swal.fire({
+                title: "<strong>Vous naviguez le site en tant qu'un visiteur.</strong>",
+                icon: "question",
+                html: "<b style={color:black}>Pour reserver des tickets, vous devez d'abord se connecter.</b>",
+                color: "black",
+                iconColor: "red",
+                showCloseButton: true,
+                confirmButtonText: `<a href="/login/index.html">Se connecter</a>`,
+                confirmButtonAriaLabel: "Thumbs up, great!",
+                confirmButtonColor:"red",
+
+                });
+        }else{
+            window.location.href = 'reservation/reservation.html'
+        }
+}
+    
+
+</script>
+
+
+
+</body>
+</html>

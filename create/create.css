@@ -1,0 +1,46 @@
+#passwordStrength{
+    width: 30%;
+    height: 5px;
+    margin: 5px 0;
+    display: none;
+}
+#passwordStrength span{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: lightgrey;
+  border-radius: 5px;
+}
+ #passwordStrength span:nth-child(2){
+  margin: 0 3px;
+}
+#passwordStrength span.active:before{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+#passwordStrength span#poor:before{
+  background-color: #ff4757;
+}
+#passwordStrength span#weak:before{
+  background-color: orange;
+}
+#passwordStrength span#strong:before{
+  background-color: #23ad5c;
+}
+#passwordInfo{
+  font-size: 15px;
+}
+#passwordInfo #poor{
+  color: red;
+}
+#passwordInfo #weak{
+  color: orange;
+}
+#passwordInfo #strong{
+  color: green;
+}

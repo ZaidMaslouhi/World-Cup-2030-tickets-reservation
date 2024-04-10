@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Koulen&family=Nosifer&family=Poppins:wght@300;400&family=Port+Lligat+Slab&family=Sancreek&family=Staatliches&family=Yanone+Kaffeesatz:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>WORLD CUP</title>
+    <link rel="shortcut icon" href="/images/logo.png" />
+    <script src="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.js"></script>
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="create.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <div
+      class="relative pt-1 min-w-full min-h-screen bg-[linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('/images/bg.jpg')] bg-cover bg-center"
+    >
+      <form id="signupForm" class="flex flex-col items-center">
+        <h1
+          class="rounded-t-lg text-white w-1/3 text-center mt-2 p-3 text-4xl font-semibold bg-red-600"
+        >
+          CREER UN COMPTE
+        </h1>
+        <div
+          class="w-1/3 rounded-b-lg border-2 mx-auto mb-10 flex flex-col items-center border-red-600"
+        >
+          <hr />
+
+          <div class="my-2">
+            <label class="text-white text-lg mt-44"
+              ><i class="fa-solid fa-user my-1 mx-2"></i>Nom et Prenom:</label
+            >
+            <br />
+            <input
+              id="userName"
+              required
+              class="m-1 w-full bg-gray-100 bg-opacity-10 border-b-2 border-white outline-0 focus:border-red-500 focus:bg-black focus:ring-red-200 text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              type="text"
+            />
+          </div>
+          <div class="my-2">
+            <label class="text-white text-lg mt-44"
+              ><i class="fa-solid fa-id-card my-1 mx-2"></i></i>C.I.N:</label
+            >
+            <br />
+            <input
+              id="userCIN"
+              required
+              class="w-full m-1 bg-gray-100 bg-opacity-10 border-b-2 border-white focus:border-red-500 focus:bg-black focus:ring-red-200 outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              type="text"
+            />
+          </div>
+          <div class="my-2">
+            <label class="text-white text-lg mt-44"
+              ><i class="fa-solid fa-envelope my-1 mx-2"></i>Email:</label
+            >
+            <br />
+            <input
+              id="userEmail"
+              required
+              class="m-1 w-full bg-gray-100 bg-opacity-10 border-b-2 border-white focus:border-red-500 focus:bg-black focus:ring-red-200 outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              type="email"
+            />
+          </div>
+          <div class="my-2 relative">
+            <label class="text-white text-lg mt-44"
+              ><i class="fa-solid fa-lock my-1 mx-2"></i>Mot de passe:</label
+            >
+            <br />
+            <input
+              id="userPassword"
+              required
+              class="m-1 w-full bg-gray-100 bg-opacity-10 border-b-2 border-white focus:border-red-500 focus:bg-black focus:ring-red-200 outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              type="password"
+            />
+            <br /><i
+            id="hide"
+              class="fa-solid fa-eye-slash absolute right-1 top-9 mt-2 ml-3 text-white cursor-pointer duration-200 hover:text-red-600"
+            ></i>
+          </div>
+          <div id="passwordStrength">
+            <span id="poor" ></span>
+            <span id="weak"></span>
+            <span id="strong"></span>
+          </div>
+          <div id="passwordInfo" class="text-lg font-bold "></div>
+          <button
+            class="px-5 py-2 rounded-3xl h-10 bg-red-600 text-white duration-300 hover:bg-red-400 font-semibold cursor-pointer my-4"
+            id="signupButton" disabled
+          >
+            Créer un compte
+          </button>
+          <button
+            type="submit"
+            class="text-white mb-2 hover:text-red-600 hover:underline"
+          >
+            <a href="/login/index.html" class="font-bold"
+              >Vous avez deja un compte? Se connecter</a
+            >
+          </button>
+        </div>
+      </form>
+      <div class="group absolute top-8 left-4">
+        <a
+          href="/mainPage.html"
+          class="p-4 cursor-pointer duration-300 font-semibold rounded-lg bg-red-600 text-white uppercase"
+          >Retour a la page principale
+          <i
+            class="fa-solid fa-share ml-1 duration-300 group-hover:translate-x-1"
+          ></i
+        ></a>
+      </div>
+    </div>
+
+    <script type="module" src="/create/create.js"></script>
+  </body>
+</html>
