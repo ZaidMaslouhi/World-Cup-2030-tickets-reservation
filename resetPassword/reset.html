@@ -1,131 +1,132 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Koulen&family=Nosifer&family=Poppins:wght@300;400&family=Port+Lligat+Slab&family=Sancreek&family=Staatliches&family=Yanone+Kaffeesatz:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <title>WORLD CUP</title>
-    <script src="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.js"></script>
-    <link
-      type="text/css"
-      rel="stylesheet"
-      href="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.css"
-    />
-    <link rel="shortcut icon" href="/images/logo.png" />
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Koulen&family=Nosifer&family=Poppins:wght@300;400&family=Port+Lligat+Slab&family=Sancreek&family=Staatliches&family=Yanone+Kaffeesatz:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <title>WORLD CUP</title>
+        <script src="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.js"></script>
+        <link
+            type="text/css"
+            rel="stylesheet"
+            href="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.css"
+        />
+        <link rel="shortcut icon" href="/images/logo.png" />
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
 
-  <body>
-    <div
-      class="container pt-1 min-w-full min-h-screen bg-[linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('/images/bg.jpg')] bg-cover bg-center"
-    >
-      <form class="flex flex-col items-center">
-        <h5
-          class="rounded-t-lg text-white w-1/3 text-center mt-12 p-3 text-4xl font-semibold bg-red-600"
-        >
-          Réinitialisation du mot de passe.
-        </h5>
+    <body>
         <div
-          class="w-1/3 rounded-b-lg border-2 mx-auto mb-10 flex flex-col items-center border-red-600"
+            class="container pt-1 min-w-full min-h-screen bg-[linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('/images/bg.jpg')] bg-cover bg-center"
         >
-          <hr />
-          <div class="my-7">
-            <label class="text-white text-lg mt-44"
-              ><i class="fa-solid fa-envelope my-1 mx-2"></i>Email:</label
-            >
-            <br />
-            <input
-              id="email"
-              required
-              class="m-1 w-full bg-gray-100 bg-opacity-10 border-b-2 border-white focus:border-red-500 focus:bg-black focus:ring-red-200 outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-              type="email"
-            />
-          </div>
+            <form class="flex flex-col items-center">
+                <h5
+                    class="rounded-t-lg text-white w-1/3 text-center mt-12 p-3 text-4xl font-semibold bg-red-600"
+                >
+                    Réinitialisation du mot de passe.
+                </h5>
+                <div
+                    class="w-1/3 rounded-b-lg border-2 mx-auto mb-10 flex flex-col items-center border-red-600"
+                >
+                    <hr />
+                    <div class="my-7">
+                        <label class="text-white text-lg mt-44"
+                            ><i class="fa-solid fa-envelope my-1 mx-2"></i
+                            >Email:</label
+                        >
+                        <br />
+                        <input
+                            id="email"
+                            required
+                            class="m-1 w-full bg-gray-100 bg-opacity-10 border-b-2 border-white focus:border-red-500 focus:bg-black focus:ring-red-200 outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                            type="email"
+                        />
+                    </div>
 
-          <button
-            type="button"
-            id="envoyer"
-            class="px-5 py-2 rounded-3xl h-10 bg-red-600 text-white duration-300 hover:bg-red-400 font-semibold cursor-pointer my-5"
-          >
-            Envoyez le mail
-          </button>
-          <a
-            href="/create/index.html"
-            class="text-white font-bold mb-3 hover:text-red-500 hover:underline"
-            >Créer un compte</a
-          >
+                    <button
+                        type="button"
+                        id="envoyer"
+                        class="px-5 py-2 rounded-3xl h-10 bg-red-600 text-white duration-300 hover:bg-red-400 font-semibold cursor-pointer my-5"
+                    >
+                        Envoyez le mail
+                    </button>
+                    <a
+                        href="/create/index.html"
+                        class="text-white font-bold mb-3 hover:text-red-500 hover:underline"
+                        >Créer un compte</a
+                    >
+                </div>
+            </form>
+
+            <div class="group absolute top-8 left-4">
+                <a
+                    href="/index.html"
+                    class="p-4 cursor-pointer duration-300 font-semibold rounded-lg bg-red-600 text-white uppercase"
+                    >Retour a la page principale
+                    <i
+                        class="fa-solid fa-share ml-1 duration-300 group-hover:translate-x-1"
+                    ></i
+                ></a>
+            </div>
         </div>
-      </form>
 
-      <div class="group absolute top-8 left-4">
-        <a
-          href="/mainPage.html"
-          class="p-4 cursor-pointer duration-300 font-semibold rounded-lg bg-red-600 text-white uppercase"
-          >Retour a la page principale
-          <i
-            class="fa-solid fa-share ml-1 duration-300 group-hover:translate-x-1"
-          ></i
-        ></a>
-      </div>
-    </div>
+        <script type="module">
+            import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js';
+            import {
+                getAuth,
+                createUserWithEmailAndPassword,
+                signInWithEmailAndPassword,
+                onAuthStateChanged,
+                sendPasswordResetEmail
+            } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js';
+            const firebaseConfig = {
+                apiKey: 'AIzaSyCyiLtFSarq5KtsfgpbnbFK98rU1SgiBqc',
+                authDomain: 'world-cup-2030-7f986.firebaseapp.com',
+                projectId: 'world-cup-2030-7f986',
+                storageBucket: 'world-cup-2030-7f986.appspot.com',
+                messagingSenderId: '442511059546',
+                appId: '1:442511059546:web:f46304d9638bab14a6c663',
+                measurementId: 'G-1LJTMMRVKT'
+            };
+            const app = initializeApp(firebaseConfig);
+            const auth = getAuth(app);
 
-    <script type="module">
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
-      import {
-        getAuth,
-        createUserWithEmailAndPassword,
-        signInWithEmailAndPassword,
-        onAuthStateChanged,
-        sendPasswordResetEmail,
-      } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
-      const firebaseConfig = {
-        apiKey: "AIzaSyCyiLtFSarq5KtsfgpbnbFK98rU1SgiBqc",
-        authDomain: "world-cup-2030-7f986.firebaseapp.com",
-        projectId: "world-cup-2030-7f986",
-        storageBucket: "world-cup-2030-7f986.appspot.com",
-        messagingSenderId: "442511059546",
-        appId: "1:442511059546:web:f46304d9638bab14a6c663",
-        measurementId: "G-1LJTMMRVKT",
-      };
-      const app = initializeApp(firebaseConfig);
-      const auth = getAuth(app);
+            const reset = document.getElementById('envoyer');
+            const email = document.getElementById('email');
 
-      const reset = document.getElementById("envoyer");
-      const email = document.getElementById("email");
+            let resetPassword = () => {
+                sendPasswordResetEmail(auth, email.value)
+                    .then(() => {
+                        Swal.fire({
+                            icon: 'info',
+                            title: 'Un lien de vérification a été envoyé à votre Email!'
+                        });
+                    })
 
-      let resetPassword = () => {
-        sendPasswordResetEmail(auth, email.value)
-          .then(() => {
-            Swal.fire({
-              icon: "info",
-              title: "Un lien de vérification a été envoyé à votre Email!",
-            });
-          })
+                    .catch((error) => {
+                        Swal.fire({
+                            title: 'Email incorrect!',
+                            icon: 'error'
+                        });
+                        console.log(error.code);
+                        console.log(error.message);
+                    });
+            };
 
-          .catch((error) => {
-            Swal.fire({
-              title: "Email incorrect!",
-              icon: "error",
-            });
-            console.log(error.code);
-            console.log(error.message);
-          });
-      };
-
-      reset.addEventListener("click", resetPassword);
-    </script>
-  </body>
+            reset.addEventListener('click', resetPassword);
+        </script>
+    </body>
 </html>
